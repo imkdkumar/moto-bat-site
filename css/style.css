@@ -1,0 +1,278 @@
+@font-face {
+    font-family: 'Roag';
+    src: url('Roag-Bold.otf') format('opentype'); 
+  }
+  
+  @font-face {
+    font-family: 'Roag';
+    font-weight: lighter;
+    src: url('Roag-Light.otf') format('opentype'); 
+  }
+  
+  @font-face {
+    font-family: 'Roag';
+    font-weight: bolder;
+    font-style: italic;
+    src: url('Roag-ExtraBoldItalic.otf') format('opentype'); 
+  }
+  
+  html, body {
+      width: 100%;
+      height: 100%;
+      /* overflow: hidden; */
+      font-family: 'Roag', sans-serif; 
+      overflow-x: hidden;
+  }
+  
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  
+  header {
+      background-color: #fff;
+      padding: 1rem 0;
+  }
+  
+  .container-fluid {
+      width: 100%;
+      padding: 0 1rem;
+  }
+  
+  .preorder-btn {
+      position: relative;
+      z-index: 5;
+  }
+  
+  .preorder-btn-desktop {
+      display: none; 
+      position: absolute; 
+      bottom: 20px; 
+      left: 20px; 
+  }
+  
+  .preorder-btn-mobile {
+      display: none; 
+  }
+  
+  @media (min-width: 769px) {
+      .preorder-btn-desktop {
+          display: block; 
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .preorder-btn-mobile {
+          display: block; 
+      }
+  }
+  
+  .logo {
+      text-align: left;
+      max-width: 200px;
+      margin-right: auto;
+  }
+  
+  .desktop-nav {
+      text-align: right;
+  }
+  
+  .desktop-nav .nav {
+      justify-content: end;
+  }
+  
+  .mobile-nav {
+      display: none;
+  }
+  
+  .mobile-nav .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: start;
+  }
+  
+  .mobile-nav .nav-link {
+      color: #333;
+      padding: 0.5rem 1rem;
+  }
+  
+  .hero {
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .hero-image {
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .hero-content {
+      text-align: left;
+      color: #fff;
+      max-width: 500px;
+      flex: 1;
+      font-family: 'Roag'; 
+  }
+  
+  .hero-content.mobile {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: left; 
+      padding: 1rem;
+  }
+  
+  .hero-image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+  }
+  
+  .desktop-text {
+      display: block;
+      color: #000;
+      text-align: left; 
+  
+  }
+  
+  .mobile-text {
+      display: none;
+  }
+  
+  
+  .partners {
+      text-align: center;
+      margin-top: 4rem;
+  }
+  
+  .partner-logo {
+      max-width: 60px;
+      margin: 0 1rem;
+  }
+  
+  @media (max-width: 768px) {
+      body {
+          padding: 0;
+      }
+  
+      header {
+          padding: 0;
+      }
+  
+      .desktop-text {
+          display: none;
+      }
+  
+      .mobile-text {
+          display: block;
+      }
+  
+      .hero-image {
+          flex-direction: column;
+          aspect-ratio: 13 / 16; 
+      }
+  
+      .hero-content {
+          position: absolute;
+          top: 20%;
+          /* left: 50%;
+          transform: translate(-50%, -50%); */
+          text-align: left;
+      }
+  
+      .hero-content h1 {
+          font-size: 3rem; 
+          line-height: 1.5; 
+        }
+  
+      .hero-image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; 
+      }
+  
+      .mobile-nav {
+          display: block;
+      }
+  
+      .desktop-nav {
+          display: none;
+      }
+  
+      .partners {
+          text-align: left;
+      }
+  
+      .partner-logo {
+          max-width: 80px; 
+          margin: 5px 10px;
+      }
+  
+      .partners .d-flex {
+          flex-direction: column; 
+          align-items: flex-start; 
+      }
+  
+      
+  
+      .preorder-btn {
+          position: absolute;
+          bottom: 10px; 
+          left: 2%;   
+          z-index: 5;
+      }
+  
+     
+  }
+  
+  @media (min-width: 769px) {
+      body {
+          margin: 0 auto;
+          padding: 0 60px;
+          max-width: 100vw;
+      }
+  
+      header {
+          padding: 0 60px;
+      }
+  
+      .hero-image {
+          flex-direction: row;
+      }
+  
+      .hero-content {
+          position: static;
+          text-align: left;
+          color: #333;
+      }
+      
+      .hero-image img {
+          max-width: 50%;
+          height: auto;
+      }
+  
+      .partners .d-flex {
+          flex-direction: row;
+          align-items: center;
+      }
+  
+      .partner-logo {
+          max-width: 60px;
+          margin: 0 1rem;
+      }
+  
+      .preorder-btn {
+          position: absolute; 
+          bottom: 20px; 
+          left: 20px; 
+      }
+  
+      
+  }
