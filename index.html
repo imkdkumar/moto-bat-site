@@ -10,6 +10,7 @@
 </head>
 <body>
 
+    <!-- Header Section -->
     <header class="bg-white py-3">
         <div class="container-fluid">
             <div class="row align-items-center justify-content-between">
@@ -21,10 +22,10 @@
                 <div class="col-6 text-end">
                     <nav class="desktop-nav d-none d-md-block">
                         <ul class="nav justify-content-end">
-                            <li class="nav-item"><a class="nav-link" href="#">Hjælp</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Om</a></li>
-                            <li class="nav-item"><a class="nav-link text-danger fw-bold" href="#">Forudbestilling</a></li>
+                            <li class="nav-item roag-light"><a class="nav-link" href="#">Hjælp</a></li>
+                            <li class="nav-item roag-light"><a class="nav-link" href="#">FAQ</a></li>
+                            <li class="nav-item roag-light"><a class="nav-link" href="#">Om</a></li>
+                            <li class="nav-item"><a class="nav-link text-danger roag-bold" href="#">Forudbestilling</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -32,48 +33,68 @@
         </div>
     </header>
 
+    <!-- Mobile Navigation -->
     <nav class="mobile-nav d-md-none py-3">
-        <ul class="nav justify-content-start">
-            <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link text-danger fw-bold" href="#">Preorder</a></li>
+        <ul class="nav">
+            <li class="nav-item roag-light"><a class="nav-link" href="#">Help</a></li>
+            <li class="nav-item roag-light"><a class="nav-link" href="#">FAQ</a></li>
+            <li class="nav-item roag-light"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item ms-auto"><a class="nav-link text-danger roag-bold" href="#">Preorder</a></li>
         </ul>
     </nav>
 
-    <main class="text-center">
+    <!-- Hero Section -->
+    <main>
         <section class="hero position-relative">
             <div class="hero-image position-relative mx-auto d-flex align-items-center justify-content-between">
-                <div class="hero-content text-white">
-                    <h1 class="desktop-text">DET ULTIMATIVE MODERNE BATTERI TIL ENHVER MOTORCYKEL</h1>
-                    <h1 class="mobile-text">THE ULTIMATE MODERN BATTERY FOR ANY MOTORCYCLE</h1>
-                    <p class="desktop-text">Uanset om du kører en vintage, bygge din perfekte café racer...</p>
-                    <p class="mobile-text">Whether you're running a vintage, building your perfect café racer...</p>
-                    <p class="desktop-text">Vi fik dig dækket fra €99</p>
-                    <p class="mobile-text">We got you covered from €99</p>
-        
-                    <div class="d-none d-md-block"> 
-                        <a href="#" class="btn btn-danger btn-sm preorder-btn preorder-btn-desktop"> 
-                            <span class="d-none d-md-inline">Forudbestilling</span> </a>
+                <!-- Hero Text Content -->
+                <div class="hero-content text-white text-left">
+                    <h1 class="desktop-text roag-bold-italic">DET ULTIMATIVE MODERNE BATTERI TIL ENHVER MOTORCYKEL</h1>
+                    <h1 class="mobile-text roag-bold-italic">THE ULTIMATE MODERN BATTERY FOR ANY MOTORCYCLE</h1>
+                    <p class="desktop-text roag-light">Uanset om du kører en vintage, bygge din perfekte café racer eller bare gøre din daglige motorcykel som pålideligt som det kan være</p>
+                    <p class="mobile-text roag-light">Whether you're running a vintage, building your perfect café racer or just making your daily motorcycle as reliable as it can be</p>
+                    <p class="desktop-text roag-light">Vi fik dig dækket fra <span class="roag-bold">€99</span></p>
+                    <p class="mobile-text roag-light">We got you covered from <span class="roag-bold">€99</span></p>
+
+                    <!-- Button and Arrow for Desktop and Mobile -->
+                    <div class="d-none d-md-block button-arrow-container">
+                        <a href="#" class="btn btn-danger btn-sm preorder-btn preorder-btn-desktop">
+                            <span class="d-none d-md-inline">FORUDBESTILLING</span>
+                        </a>
+                        <img src="img/doodle_arrow.svg" alt="Arrow Doodle" class="doodle-arrow">
                     </div>
-                </div>
-                <div>
-                    <a href="#" class="btn btn-danger btn-lg preorder-btn preorder-btn-mobile"> 
-                        <span class="d-inline d-md-none">Preorder</span> </a>
+
+                    <div class="d-block d-md-none button-arrow-container-mobile">
+                        <a href="#" class="btn btn-danger btn-lg preorder-btn preorder-btn-mobile">
+                            <span class="d-inline d-md-none">PREORDER</span>
+                        </a>
+                        <img src="img/doodle_arrow.svg" alt="Arrow Doodle" class="doodle-arrow-mobile">
+                        
+                    </div>
+
                 </div>
                 
-                    <img src="img/bmw-r80-bobber.jpg" alt="Motorcycle" class="img-fluid">
-                    
+                <div class="hero-image-container doodle-container">
+                    <img src="img/bmw-r80-bobber.jpg" alt="Motorcycle" class="img-fluid motorcycle-image">
+                    <img src="img/doodle_heat_left.svg" alt="Left Heat Doodle" class="doodle-left">
+                    <img src="img/doodle_heat_right.svg" alt="Right Heat Doodle" class="doodle-right">
+                    <img src="img/doodle_light.svg" alt="Top Light Doodle" class="doodle-top">
+                </div>
+                
+
             </div>
         </section>
 
+        <!-- Partners Section -->
         <section class="partners mt-5">
-            <h3><span class="desktop-text">Som set i</span> <span class="mobile-text">As seen in</span></h3>            
-            <div class="d-flex flex-wrap justify-content-start gap-3 mt-3">
-                <img src="img/media_bikeexif.png" alt="Bike Exif" class="img-fluid partner-logo">
-                <img src="img/media_pipeburn.png" alt="Pipeburn" class="img-fluid partner-logo">
-                <img src="img/Greasy.png" alt="Greasy Kulture" class="img-fluid partner-logo">
-                <img src="img/media_chopcult.png" alt="Chop Cult" class="img-fluid partner-logo">
+            <h3><span class="desktop-text text-muted opacity-txt roag-light">Som set i</span> 
+                <span class="mobile-text text-muted opacity-txt roag-light">As seen in</span> 
+            </h3>
+            <div class="d-flex flex-wrap justify-content-start gap-3 mt-3 partner-logo-padding ">
+                <img src="img/media_bikeexif.png" alt="Bike Exif Logo" class="img-fluid partner-logo1">
+                <img src="img/media_pipeburn.png" alt="Pipeburn Logo" class="img-fluid partner-logo2">
+                <img src="img/Greasy.png" alt="Greasy Kulture Logo" class="img-fluid partner-logo3">
+                <img src="img/media_chopcult.png" alt="Chop Cult Logo" class="img-fluid partner-logo4">
             </div>
         </section>
     </main>
